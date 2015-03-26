@@ -156,6 +156,10 @@ public final class Principal extends javax.swing.JFrame {
         try {
             int n = Integer.parseInt(txtn.getText());
             numeros = new int[n];
+            for(int i=0;i<numeros.length;i++){
+                numeros[i]= Integer.parseInt(txtnumero.getText());
+                
+            }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
             txtnumero.setText(null);
